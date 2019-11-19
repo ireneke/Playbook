@@ -3,7 +3,7 @@
   hosts: all  
   tasks:  
   - name: IIS Service Installed
-    win-features:
+    win_feature:
       name: web-server
       state: present
   - name: IIS service started
