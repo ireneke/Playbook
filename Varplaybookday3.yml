@@ -3,7 +3,7 @@
   hosts: all  
   vars_files: 
     - variable/vars.yml
-    - variable/password.yml
+    - variable/DO417-Chapter5/rajat/password.yml
   tasks:  
   - name: creating user{{usr}}
     win_user:
