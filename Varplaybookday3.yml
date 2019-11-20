@@ -2,11 +2,13 @@
 - name: creating users  
   hosts: all  
   vars_files: 
-    - variable\vars.yml
+    - variable/vars.yml
+    - variable/password.yml
   tasks:  
   - name: creating user{{usr}}
     win_user:
       name: user_{{usr}}
       state: present
+      password: "{{pwd}}"
 ... 
   
