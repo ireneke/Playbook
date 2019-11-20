@@ -8,5 +8,5 @@
     win_user:
       name: user_{{usr}}
       state: present
- 
+... 
   
