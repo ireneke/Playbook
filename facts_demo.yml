@@ -1,3 +1,4 @@
+
 ---
 - name: Testing facts
   hosts: all
